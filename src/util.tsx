@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function getOptions(props: any): any {
+export function getOptions(props: any): any {
     let options: any = {};
     for(let key in props) {
       if (
@@ -14,14 +14,14 @@ function getOptions(props: any): any {
     return options;
   }
 
-function getPropsKey(eventName) {
+export function getPropsKey(eventName) {
   return 'on' + eventName
     .replace(/(\:[a-z])/g, $1 => $1.toUpperCase())
     .replace(/^[a-z]/, $1 => $1.toUpperCase())
     .replace(':','')
 }
 
-function getEvents(events: any={}, props: any={}): any {
+export function getEvents(events: any={}, props: any={}): any {
   let prop2EventMap: any = {};
   for(let key in events) {
     prop2EventMap[getPropsKey(key)] = key;
@@ -43,7 +43,7 @@ let typeOf = function(obj){
     return ({}).toString.call(obj)
         .match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 };
-function cloneObject(obj){
+export function cloneObject(obj){
   var type = typeOf(obj);
   if (type == 'object' || type == 'array') {
     if (obj.clone) {
@@ -58,7 +58,7 @@ function cloneObject(obj){
   return obj;
 }
 
-function findChild(children: any[], childType: string) {
+export function findChild(children: any[], childType: string) {
   let found: any;
   let childrenArr = React.Children.toArray(children);
   for (let i=0; i<childrenArr.length; i++) {

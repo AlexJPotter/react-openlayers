@@ -11,7 +11,7 @@
     "jsx": "react",
     "sourceMap": true,
     "pretty": true,
-    "allowJs": true,
+    "allowJs": false,
     "allowUnreachableCode": true,
     "allowUnusedLabels": true,
     "allowSyntheticDefaultImports": true,
@@ -25,7 +25,9 @@
     "baseUrl": "src",
     "paths": {
       "react-openlayers": ["./index"]
-    }
+    },
+    "declaration": true,
+    "declarationDir": "dist/typings"
   },
   "types": [
     "openlayers",

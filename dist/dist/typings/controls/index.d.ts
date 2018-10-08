@@ -1,0 +1,22 @@
+import { ScaleLine } from './scale-line';
+import { Attribution } from './attribution';
+import { FullScreen } from './full-screen';
+import { MousePosition } from './mouse-position';
+import { OverviewMap } from './overview-map';
+import { Rotate } from './rotate';
+import { ZoomSlider } from './zoom-slider';
+import { ZoomToExtent } from './zoom-to-extent';
+import { Zoom } from './zoom';
+import { Controls } from './controls';
+declare let control: {
+    ScaleLine: typeof ScaleLine;
+    Attribution: typeof Attribution;
+    FullScreen: typeof FullScreen;
+    MousePosition: typeof MousePosition;
+    OverviewMap: typeof OverviewMap;
+    Rotate: typeof Rotate;
+    ZoomSlider: typeof ZoomSlider;
+    ZoomToExtent: typeof ZoomToExtent;
+    Zoom: typeof Zoom;
+};
+export { Controls, control };
