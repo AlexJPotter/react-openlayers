@@ -1,5 +1,5 @@
 {
-  "name": "react-openlayers",
+  "name": "react-openlayers--ajp-typed",
   "version": "0.2.1",
   "description": "OpenLayer React Components",
   "license": "MIT",
@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allenhwkim/react-openlayers.git"
+    "url": "git+https://github.com/AlexJPotter/react-openlayers.git"
   },
   "author": "Allen Kim<allenhwkim@gmail.com>",
   "bugs": {
-    "url": "https://github.com/allenhwkim/react-openlayers/issues"
+    "url": "https://github.com/AlexJPotter/react-openlayers/issues"
   },
-  "homepage": "https://github.com/allenhwkim/react-openlayers#readme",
+  "homepage": "https://github.com/AlexJPotter/react-openlayers#readme",
   "keywords": [
     "openlayer",
     "typescript",
