@@ -27,7 +27,7 @@
       "react-openlayers": ["./index"]
     },
     "declaration": true,
-    "declarationDir": "dist/typings"
+    "declarationDir": "typings"
   },
   "types": [
     "openlayers",
